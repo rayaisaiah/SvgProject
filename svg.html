@@ -39,9 +39,21 @@
           <!--mouth-->
           <rect x="33" y="71" width="8" height="1" fill="black" ></rect>
           <!--illuminati-->
+          <rect x="140" y="50" width="25" height="0" fill="red" ><animate attributeName = "height" from = "0" to = "200" dur ="10s" begin="2s" fill="freeze" /></rect>
           <polygon points="150 0 100 50 200 50" fill="lightgreen"> <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="click" fill="freeze"/></polygon>
           <ellipse cx="150" cy="25" rx="7" ry="5.5" fill="white"/>
-          <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover" fill="freeze"/></ellipse>
+          <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover" fill="freeze"/></circle>
+
+          <!--Road-->
+          <rect x="45" y="117" width="155" height="5" fill="black" ></rect>
+          <rect x="0" y="117" width="25" height="5" fill="black" ></rect>
+         <!--Car-->
+         <image x="45" y="110" width="10" height="10" xlink:href="http://www.clipartkid.com/images/660/cartoon-blue-car-clip-art-at-clker-com-vector-clip-art-online-K9BU3O-clipart.png" >
+         <animate id ="car1" attributeName = "x" from = "40" to = "145" dur = "3s" fill="freeze" begin = "click; 2s; " />
+         <animate id="carStart1" attributeName = "y" from = "110" to = "45" dur = "3s" begin = "car1.end" fill="freeze"/>
+          <animate id="carStart1" attributeName = "y" from = "110" to = "45" dur = "3s" begin = "car1.end" fill="freeze"/>
+ </image>
+
     </svg>
   <h2>This is Devin Inc. Devin inc is battling the illuminati mothership for the planet earth.<h2>
   </body>

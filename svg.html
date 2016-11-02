@@ -6,7 +6,7 @@
   </head>
   <body>
     <!-- page content -->
-    <h1>LARGE HEADER</h1>
+    <h1>LARGE HEADER(isaiah raya's project)</h1>
     <svg width="100%" viewBox="0 0 200 120" style="background-color: LightSkyBlue ">
       <!-- Building-->
         <rect  x="25" y="75" width="20" height="50" fill="DarkGray" ></rect>
@@ -19,23 +19,30 @@
           <rect  x="30" y="110" width="3" height="3" fill="yellow" ></rect>
           <rect  x="38" y="110" width="3" height="3" fill="yellow" ></rect>
           <!--Head(Devin)-->
-          <circle cx="35" cy="66" r="9" fill="#F0E68C"/>
+          <circle cx="35" cy="66" r="9" fill="#F0E68C">></circle>
           <!--Hair-->
-          <ellipse cx="35" cy="58" rx="9" ry="4.5" fill="#8B4513"/>
+          <ellipse cx="35" cy="58" rx="9" ry="4.5" fill="#8B4513"><animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="mouseover"/></ellipse>
           <ellipse cx="25" cy="65" rx="3.5" ry="8" fill="#8B4513"/>
           <!--Eyes-->
           <ellipse cx="33" cy="65" rx="3.5" ry="2" fill="white"/>
           <ellipse cx="40" cy="65" rx="3.5" ry="2" fill="white"/>
-          <circle cx="33" cy="65" r="1" fill="black"/>
-          <circle cx="40" cy="65" r="1" fill="black"/>
+          <circle cx="33" cy="65" r="1" fill="black">
+          <animate id="right" attributeName = "cx" from = "33" to = "35" dur = "3s" begin="click" />
+          <animate id="right2" attributeName = "cx" from = "35" to = "33" dur = "3s"  begin="right.end" /></circle>
+          <circle cx="40" cy="65" r="1" fill="black"><animate id="left" attributeName = "cx" from = "40" to = "38" dur = "3s" begin="click" />
+          <animate id="left2" attributeName = "cx" from = "38" to = "40" dur = "3s"  begin="left.end"  /></circle>
+
           <!--nose-->
           <ellipse cx="36" cy="67" rx="1" ry="3" fill="#e0d784"/>
           <circle cx="35" cy="68" r="1" fill="#e0d784"/>
           <circle cx="37" cy="68" r="1" fill="#e0d784"/>
           <!--mouth-->
           <rect x="33" y="71" width="8" height="1" fill="black" ></rect>
-
+          <!--illuminati-->
+          <polygon points="150 0 100 50 200 50" fill="lightgreen"> <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="click" fill="freeze"/></polygon>
+          <ellipse cx="150" cy="25" rx="7" ry="5.5" fill="white"/>
+          <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover" fill="freeze"/></ellipse>
     </svg>
-  <h2>This is Devin Inc.<h2>
+  <h2>This is Devin Inc. Devin inc is battling the illuminati mothership for the planet earth.<h2>
   </body>
 </html>

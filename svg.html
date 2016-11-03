@@ -45,7 +45,7 @@
           <rect x="140" y="50" width="25" height="0" fill="red" fill-opacity="0.50" ><animate attributeName = "height" from = "0" to = "200" dur ="10s" begin="2s" fill="freeze" /></rect>
           <polygon points="150 0 100 50 200 50" fill="lightgreen"> <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="click" fill="freeze"/></polygon>
           <ellipse cx="150" cy="25" rx="7" ry="5.5" fill="white"/>
-          <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover" fill="freeze"/></circle>
+          <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover; laserR.end" fill="freeze"/></circle>
 
           <!--Road-->
           <rect x="45" y="117" width="155" height="5" fill="black" ></rect>
@@ -59,15 +59,15 @@
           <animate id="end" attributeName = "opacity" from="1" to="0" begin="carStart1.end" dur="1s"/></image>
           <!--Laser-->
           <line x1="33" y1="65" x2="33" y2="65" stroke="red" stroke-width="2">
-          <animate id="laserR" attributeName = "x2" from = "33" to = "145" dur = "3s"  begin="rightR.end" />
-          <animate id="laserL" attributeName = "y2" from = "65" to = "20" dur = "3s"  begin="rightL.end" />
+          <animate id="laserR" attributeName = "x2" from = "33" to = "147" dur = "3s"  begin="rightR.end" />
+          <animate id="laserL" attributeName = "y2" from = "65" to = "25" dur = "3s"  begin="rightL.end" />
           <animate id="laserR2" attributeName = "x1" from = "33" to = "33" dur = "3s"  begin="rightR.end" />
           <animate id="laserL2" attributeName = "y1" from = "65" to = "65" dur = "3s"  begin="rightL.end" /></line>
 
-          <line x1="40" y1="65" x2="145" y2="20" stroke="red" stroke-width="2">
-            <animate id="laserR3" attributeName = "x2" from = "40" to = "145" dur = "3s"  begin="rightR.end" />
-            <animate id="laserL3" attributeName = "y2" from = "65" to = "20" dur = "3s"  begin="rightL.end" />
-            <animate id="laserR3" attributeName = "x1" from = "40" to = "33" dur = "3s"  begin="rightR.end" />
+          <line x1="40" y1="65" x2="40" y2="65" stroke="red" stroke-width="2">
+            <animate id="laserR3" attributeName = "x2" from = "40" to = "147" dur = "3s"  begin="rightR.end" />
+            <animate id="laserL3" attributeName = "y2" from = "65" to = "25" dur = "3s"  begin="rightL.end" />
+            <animate id="laserR3" attributeName = "x1" from = "40" to = "40" dur = "3s"  begin="rightR.end" />
             <animate id="laserL3" attributeName = "y1" from = "65" to = "65" dur = "3s"  begin="rightL.end" /></line>
 
 

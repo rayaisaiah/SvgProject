@@ -21,25 +21,28 @@
           <!--Head(Devin)-->
           <circle cx="35" cy="66" r="9" fill="#F0E68C">></circle>
           <!--Hair-->
-          <ellipse cx="35" cy="58" rx="9" ry="4.5" fill="#8B4513"><animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="mouseover"/></ellipse>
+          <ellipse cx="35" cy="58" rx="9" ry="4.5" fill="#8B4513"><animate attributeName = "opacity" from = "1" to = "0" dur ="12s" begin="mouseover"/></ellipse>
           <ellipse cx="25" cy="65" rx="3.5" ry="8" fill="#8B4513"/>
           <!--Eyes-->
           <ellipse cx="33" cy="65" rx="3.5" ry="2" fill="white"/>
           <ellipse cx="40" cy="65" rx="3.5" ry="2" fill="white"/>
           <circle cx="33" cy="65" r="1" fill="black">
+          <animate id="rightR" attributeName = "fill" from = "black" to = "red" dur = "3s" begin="1s" fill="freeze"/>
           <animate id="right" attributeName = "cx" from = "33" to = "35" dur = "3s" begin="click" />
           <animate id="right2" attributeName = "cx" from = "35" to = "33" dur = "3s"  begin="right.end" /></circle>
-          <circle cx="40" cy="65" r="1" fill="black"><animate id="left" attributeName = "cx" from = "40" to = "38" dur = "3s" begin="click" />
+          <circle cx="40" cy="65" r="1" fill="black">
+          <animate id="rightL" attributeName = "fill" from = "black" to = "red" dur = "3s" begin="1s"  fill="freeze"/>
+          <animate id="left" attributeName = "cx" from = "40" to = "38" dur = "3s" begin="click" />
           <animate id="left2" attributeName = "cx" from = "38" to = "40" dur = "3s"  begin="left.end"  /></circle>
-
           <!--nose-->
           <ellipse cx="36" cy="67" rx="1" ry="3" fill="#e0d784"/>
           <circle cx="35" cy="68" r="1" fill="#e0d784"/>
-          <circle cx="37" cy="68" r="1" fill="#e0d784"/>
+          <circle cx="37" cy="68" r="1" fill="#e0d784"/>s
           <!--mouth-->
           <rect x="33" y="71" width="8" height="1" fill="black" ></rect>
+
           <!--illuminati-->
-          <rect x="140" y="50" width="25" height="0" fill="red" ><animate attributeName = "height" from = "0" to = "200" dur ="10s" begin="2s" fill="freeze" /></rect>
+          <rect x="140" y="50" width="25" height="0" fill="red" fill-opacity="0.50" ><animate attributeName = "height" from = "0" to = "200" dur ="10s" begin="2s" fill="freeze" /></rect>
           <polygon points="150 0 100 50 200 50" fill="lightgreen"> <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="click" fill="freeze"/></polygon>
           <ellipse cx="150" cy="25" rx="7" ry="5.5" fill="white"/>
           <circle cx="150" cy="25" r="4" fill="black"><animate attributeName = "fill" from = "white" to = "red" dur ="5s" begin="mouseover" fill="freeze"/></circle>
@@ -49,10 +52,25 @@
           <rect x="0" y="117" width="25" height="5" fill="black" ></rect>
          <!--Car-->
          <image x="45" y="110" width="10" height="10" xlink:href="http://www.clipartkid.com/images/660/cartoon-blue-car-clip-art-at-clker-com-vector-clip-art-online-K9BU3O-clipart.png" >
-         <animate id ="car1" attributeName = "x" from = "40" to = "145" dur = "3s" fill="freeze" begin = "click; 2s; " />
-         <animate id="carStart1" attributeName = "y" from = "110" to = "45" dur = "3s" begin = "car1.end" fill="freeze"/>
-          <animate id="carStart1" attributeName = "y" from = "110" to = "45" dur = "3s" begin = "car1.end" fill="freeze"/>
- </image>
+         <animate id ="car1" attributeName = "x" from = "40" to = "145" dur = "3s" fill="freeze" begin = "click; 2s;" />
+         <animate id="carStart1" attributeName = "y" from = "110" to = "45" dur = "3s" begin = "car1.end"/>
+          <animate id="carStart1" attributeName = "x" from = "145" to = "145" dur = "3s" begin = "car1.end" />
+          <animate id="end" attributeName = "y" from = "45" to = "45" dur = "3s" begin = "carStart1.end"/>
+          <animate id="end" attributeName = "opacity" from="1" to="0" begin="carStart1.end" dur="1s"/></image>
+          <!--Laser-->
+          <line x1="33" y1="65" x2="33" y2="65" stroke="red" stroke-width="2">
+          <animate id="laserR" attributeName = "x2" from = "33" to = "145" dur = "3s"  begin="rightR.end" />
+          <animate id="laserL" attributeName = "y2" from = "65" to = "20" dur = "3s"  begin="rightL.end" />
+          <animate id="laserR2" attributeName = "x1" from = "33" to = "33" dur = "3s"  begin="rightR.end" />
+          <animate id="laserL2" attributeName = "y1" from = "65" to = "65" dur = "3s"  begin="rightL.end" /></line>
+
+          <line x1="40" y1="65" x2="145" y2="20" stroke="red" stroke-width="2">
+            <animate id="laserR3" attributeName = "x2" from = "40" to = "145" dur = "3s"  begin="rightR.end" />
+            <animate id="laserL3" attributeName = "y2" from = "65" to = "20" dur = "3s"  begin="rightL.end" />
+            <animate id="laserR3" attributeName = "x1" from = "40" to = "33" dur = "3s"  begin="rightR.end" />
+            <animate id="laserL3" attributeName = "y1" from = "65" to = "65" dur = "3s"  begin="rightL.end" /></line>
+
+
 
     </svg>
   <h2>This is Devin Inc. Devin inc is battling the illuminati mothership for the planet earth.<h2>

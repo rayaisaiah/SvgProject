@@ -34,12 +34,19 @@
           <animate id="rightL" attributeName = "fill" from = "black" to = "red" dur = "3s" begin="1s; eye.end" />
           <animate id="left" attributeName = "cx" from = "40" to = "38" dur = "3s" begin="click" />
           <animate id="left2" attributeName = "cx" from = "38" to = "40" dur = "3s"  begin="left.end"  /></circle>
-          <!--nose-->
-          <ellipse cx="36" cy="67" rx="1" ry="3" fill="#e0d784"/>
-          <circle cx="35" cy="68" r="1" fill="#e0d784"/>
-          <circle cx="37" cy="68" r="1" fill="#e0d784"/>s
           <!--mouth-->
           <rect x="33" y="71" width="8" height="1" fill="black" ></rect>
+          <!--nose-->
+          <ellipse cx="36" cy="67" rx="1" ry="3" fill="#e0d784">
+           <animate id="nosegrowth" attributeName = "rx" from = "1" to = "3" dur = "3s" begin="click" />
+           <animate id="nosegrowth2" attributeName = "ry" from = "3" to = "6" dur = "3s" begin="nosegrowth.begin" />
+          </ellipse>
+          <circle cx="35" cy="68" r="1" fill="#e0d784">
+           <animate id="nosegrowth4" attributeName = "r" from = "1" to = "3" dur = "3s" begin="nosegrowth.begin" />
+          </circle>
+          <circle cx="37" cy="68" r="1" fill="#e0d784">
+          <animate id="nosegrowth3" attributeName = "r" from = "1" to = "3" dur = "3s" begin="nosegrowth.begin" />
+          </circle>
 
           <!--illuminati-->
           <rect x="140" y="50" width="25" height="0" fill="red" fill-opacity="0.50" >
@@ -47,7 +54,7 @@
           <!--  <animate attributeName = "opacity" from = "-2" to = ".50" dur ="10s" begin="car1.end"  />-->
         <!--  <animate attributeName = "opacity" from = ".50" to = "-2" dur ="10s" begin="end1.end"  />--></rect>
           <polygon points="150 0 100 50 200 50" fill="lightgreen">
-          <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="click" fill="freeze"/>
+          <animate attributeName = "opacity" from = "1" to = "0" dur ="10s" begin="25s" fill="freeze"/>
           <animate attributeName = "fill" from = "lightgreen" to = "red" dur = "3s" begin="laserR.end" />
           </polygon>
           <ellipse cx="150" cy="25" rx="7" ry="5.5" fill="white"/>
@@ -81,7 +88,7 @@
 
 
     </svg>
-  <h2>This is Devin Inc. Devin inc is battling the illuminati mothership for the planet earth.<h2>
+  <h2>This is Devin Inc. Devin inc is battling the illuminati mothership for the planet earth. Hover over devin's hair, click his eyes, and nose<h2>
   </body>
   <script type="text/javascript">
 if ( window.addEventListener ) {
